@@ -1,0 +1,16 @@
+import SearchableLayout from "@/components/searchable-layout";
+import style from "@/pages/index.module.css";
+import { ReactNode } from "react";
+
+export default function Home() {
+  return (
+    <>
+      <h1 className={style.h1}>인덱스</h1>
+      <h2 className={style.h2}>책 목록</h2>
+    </>
+  );
+}
+
+Home.getLayout = (page: ReactNode) => {
+  return <SearchableLayout>{page}</SearchableLayout>;
+};
