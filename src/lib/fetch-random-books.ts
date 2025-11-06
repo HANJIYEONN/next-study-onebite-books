@@ -15,3 +15,4 @@ export default async function fetchRandomBooks(): Promise<BookData[]> {
     return [];
   }
 }
+
