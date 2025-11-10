@@ -1,7 +1,6 @@
 import SearchableLayout from "@/components/searchable-layout";
 import { ReactNode, useEffect, useState } from "react";
 import BookItem from "@/components/book-item";
-import { GetStaticPropsContext, InferGetStaticPropsType } from "next";
 import fetchBooks from "@/lib/fetch-books";
 import { useRouter } from "next/router";
 import { BookData } from "@/types";
